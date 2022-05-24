@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ecity = findViewById(R.id.CityN);
-        ecode = findViewById(R.id.Code);
+//        ecode = findViewById(R.id.Code);
         tinfo = findViewById(R.id.i4);
     }
 
@@ -44,15 +44,11 @@ public class MainActivity extends AppCompatActivity {
         // code goi api
         String temp ="";
         String city = ecity.getText().toString().trim();
-        String country = ecode.getText().toString().trim();
+//        String country = ecode.getText().toString().trim();
         if (city.equals("")) {
             tinfo.setText("Please enter city name");
         } else {
-            if(!ecode.equals("")) {
-                temp = url + "?q=" + city + "," + country + "&appid=" + appid;
-            } else {
-                temp = url + "?q=" + city + "&appid=" + appid;
-            }
+            temp = url + "?q=" + city + "&appid=" + appid;
             StringRequest stringRequest = new StringRequest(Request.Method.POST,temp,new Response.Listener<String> () {
                 @Override
                 public void onResponse(String response) {

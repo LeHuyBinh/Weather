@@ -22,16 +22,16 @@
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/Code"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Country code"
-        android:textSize="30dp"
-        android:inputType="textPersonName"
-        android:layout_marginTop="80dp">
+<!--    <EditText-->
+<!--        android:id="@+id/Code"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Country code"-->
+<!--        android:textSize="30dp"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:layout_marginTop="80dp">-->
 
-    </EditText>
+<!--    </EditText>-->
 
     <EditText
         android:id="@+id/CityN"
@@ -56,6 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginTop="20dp"
+        android:textSize="20dp"
         android:id="@+id/i4">
     </TextView>
 
